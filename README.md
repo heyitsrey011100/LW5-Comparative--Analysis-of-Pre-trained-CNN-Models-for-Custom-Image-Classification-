@@ -4,7 +4,26 @@ Google colab file: https://colab.research.google.com/drive/1HUrfknZDL1U3kTVtf-Wo
 Good model: https://colab.research.google.com/drive/1plijItXOfoCwthHbKKCxrjXjlcboYzAH?usp=sharing
 
 # PART 12: Performance Comparison Table
--
+### 📊 Model Performance Results
+
+| Model | Train Accuracy | Train Loss | Test Accuracy | Test Loss | Precision | Recall | F1-score | AUC Score |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **EfficientNetB0** (LW5) | 99.14% | 0.0335 | 98.57% | 0.0460 | 0.99 | 0.99 | 0.99 | 0.99 |
+| **MobileNetV2** (LW5) | 99.45% | 0.0215 | 98.38% | 0.0526 | 0.98 | 0.98 | 0.98 | 0.99 |
+| **ResNet50** (LW5) | 95.84% | 0.1287 | 93.33% | 0.2227 | 0.94 | 0.93 | 0.93 | 0.98 |
+| **Teachable Machine** | 99.00% | 0.0510 | 85.50% | 0.6200 | 0.86 | 0.85 | 0.85 | 0.94 |
+| **LW4 2nd Model** | 86.85% | 0.3804 | 82.67% | 0.4913 | 0.84 | 0.83 | 0.83 | 0.97 |
+| **LW3 1st Model** | 98.90% | 0.0366 | 82.29% | 1.1093  | 0.82 | 0.82 | 0.81 | 0.92 |
+| **Good Model** | 99.40% | 0.0232 | **98.95%** | 0.0401 | 0.99 | 0.99 | 0.99 | 0.99 |
+
+---
+
+### 🔍 Project Summary
+* **Best Generalization:** The **Good Model** achieved the highest test accuracy and lowest loss, indicating excellent performance on unseen data.
+* **Transfer Learning Impact:** Transitioning from a custom CNN (LW3/LW4) to pre-trained architectures like **EfficientNet** and **MobileNet** improved accuracy by over **16%**.
+* **Error Reduction:** Optimization techniques applied in the "Good Model" reduced the Test Loss significantly compared to the initial LW3 attempt.
+
+
 # GUIDE QUESTIONS (FINAL REFLECTION)
 A. Model Performance
 
